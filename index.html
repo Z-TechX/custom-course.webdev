@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="dp1.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div style="text-align: center; margin-top: 2%;">
+        <img src="assets/ZtechX-black.png" width="150">
+    </div>
+    <div class="roadmap">
+        <h1>Web Development Roadmap</h1>
+
+        <!-- Section 1: HTML & CSS -->
+        <div class="node">
+            <h2 onclick="toggleNode('htmlcss')">1. HTML & CSS</h2>
+            <ul id="htmlcss" class="hidden">
+                <li>
+                    <h3>1.1 Basics of HTML</h3>
+                    <ul>
+                        <li>Structure of an HTML document</li>
+                        <li>Common tags: headings, paragraphs, lists, links, images</li>
+                        <li>Semantic HTML</li>
+                        <li>Forms & Input Validation</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>1.2 Basics of CSS</h3>
+                    <ul>
+                        <li>Selectors and properties</li>
+                        <li>CSS Box Model (margin, padding, border)</li>
+                        <li>Flexbox and Grid for layout</li>
+                        <li>Media Queries (Responsive Design)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>1.3 Projects</h3>
+                    <ul>
+                        <li>Personal portfolio website</li>
+                        <li>Simple blog layout</li>
+                        <li>Responsive landing page</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2: JavaScript Fundamentals -->
+        <div class="node">
+            <h2 onclick="toggleNode('javascript')">2. JavaScript Fundamentals</h2>
+            <ul id="javascript" class="hidden">
+                <li>
+                    <h3>2.1 Basics of JavaScript</h3>
+                    <ul>
+                        <li>Variables, data types, and operators</li>
+                        <li>Loops and conditionals</li>
+                        <li>Functions and events</li>
+                        <li>DOM manipulation</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>2.2 Advanced JavaScript</h3>
+                    <ul>
+                        <li>Arrays and objects</li>
+                        <li>ES6 features: arrow functions, let/const, template literals</li>
+                        <li>JSON and API handling (fetching data from APIs)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>2.3 Projects</h3>
+                    <ul>
+                        <li>Interactive to-do list</li>
+                        <li>Simple quiz app</li>
+                        <li>Form validation</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Version Control with Git & GitHub -->
+        <div class="node">
+            <h2 onclick="toggleNode('git')">3. Version Control with Git & GitHub</h2>
+            <ul id="git" class="hidden">
+                <li>
+                    <h3>3.1 Basics of Git</h3>
+                    <ul>
+                        <li>Initializing repositories</li>
+                        <li>Committing and pushing changes</li>
+                        <li>Branching and merging</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>3.2 GitHub Workflow</h3>
+                    <ul>
+                        <li>Pull requests and collaboration</li>
+                        <li>Forking repositories</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>3.3 Project</h3>
+                    <ul>
+                        <li>Set up your personal portfolio on GitHub Pages</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Responsive Design & Frameworks -->
+        <div class="node">
+            <h2 onclick="toggleNode('responsive')">4. Responsive Design & Frameworks</h2>
+            <ul id="responsive" class="hidden">
+                <li>
+                    <h3>4.1 Responsive Web Design</h3>
+                    <ul>
+                        <li>Media queries recap</li>
+                        <li>Mobile-first design principles</li>
+                        <li>Cross-browser compatibility</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>4.2 CSS Frameworks</h3>
+                    <ul>
+                        <li>Introduction to Bootstrap or TailwindCSS</li>
+                        <li>Using pre-built components</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>4.3 Projects</h3>
+                    <ul>
+                        <li>Build a fully responsive website using Bootstrap or TailwindCSS</li>
+                        <li>Redesign your portfolio using a CSS framework</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 5: JavaScript Libraries & Advanced Features -->
+        <div class="node">
+            <h2 onclick="toggleNode('advancedjs')">5. JavaScript Libraries & Advanced Features</h2>
+            <ul id="advancedjs" class="hidden">
+                <li>
+                    <h3>5.1 Advanced JavaScript</h3>
+                    <ul>
+                        <li>Callbacks, Promises, Async/Await</li>
+                        <li>Error handling and debugging</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>5.2 JavaScript Libraries</h3>
+                    <ul>
+                        <li>Introduction to jQuery (optional)</li>
+                        <li>React.js basics: components, state, and props</li>
+                        <li>Understanding React hooks</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>5.3 Projects</h3>
+                    <ul>
+                        <li>Build a simple React-based weather app</li>
+                        <li>Refactor a project to use React</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Backend Development Basics -->
+        <div class="node">
+            <h2 onclick="toggleNode('backend')">6. Backend Development Basics</h2>
+            <ul id="backend" class="hidden">
+                <li>
+                    <h3>6.1 Introduction to Node.js</h3>
+                    <ul>
+                        <li>Setting up a Node.js environment</li>
+                        <li>Working with npm packages</li>
+                        <li>Basic server setup with Express.js</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>6.2 Database Basics</h3>
+                    <ul>
+                        <li>SQL vs NoSQL</li>
+                        <li>Introduction to MongoDB (NoSQL)</li>
+                        <li>Basic CRUD operations</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>6.3 Projects</h3>
+                    <ul>
+                        <li>Build a simple REST API with Node.js and Express</li>
+                        <li>Connect the API to a MongoDB database</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Full-Stack Project -->
+        <div class="node">
+            <h2 onclick="toggleNode('fullstack')">7. Full-Stack Project</h2>
+            <ul id="fullstack" class="hidden">
+                <li>
+                    <h3>7.1 Full-Stack Architecture</h3>
+                    <ul>
+                        <li>Connecting front-end and back-end</li>
+                        <li>Fetching data from your own API</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>7.2 Authentication & Authorization</h3>
+                    <ul>
+                        <li>Basics of user authentication (JWT, OAuth)</li>
+                        <li>Handling user sessions</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>7.3 Projects</h3>
+                    <ul>
+                        <li>Build a full-stack MERN app (e.g., e-commerce site, job board, or blog)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 8: Advanced Topics & Deployment -->
+        <div class="node">
+            <h2 onclick="toggleNode('advancedtopics')">8. Advanced Topics & Deployment</h2>
+            <ul id="advancedtopics" class="hidden">
+                <li>
+                    <h3>8.1 Web Performance</h3>
+                    <ul>
+                        <li>Lazy loading, code splitting, caching</li>
+                        <li>Optimizing images and files</li>
+                        <li>Best practices for fast-loading websites</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>8.2 Deployment</h3>
+                    <ul>
+                        <li>Hosting on Netlify, Vercel, or Heroku</li>
+                        <li>Setting up custom domains</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>8.3 Projects</h3>
+                    <ul>
+                        <li>Deploy your full-stack app</li>
+                        <li>Create documentation and set up CI/CD</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 9: Freelance/Job Prep -->
+        <div class="node">
+            <h2 onclick="toggleNode('jobprep')">9. Freelance/Job Prep</h2>
+            <ul id="jobprep" class="hidden">
+                <li>
+                    <h3>9.1 Building a Portfolio</h3>
+                    <ul>
+                        <li>Showcase 3-4 of your best projects</li>
+                        <li>Emphasize both front-end and back-end skills</li>
+                        <li>Add case studies and descriptions for each project</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>9.2 Resume & Cover Letter Writing</h3>
+                    <ul>
+                        <li>Tailor your resume for web development positions</li>
+                        <li>Learn how to write cover letters for freelance clients</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>9.3 Job Search & Networking</h3>
+                    <ul>
+                        <li>Use LinkedIn, GitHub, and Twitter to showcase your work</li>
+                        <li>Start applying for internships, junior developer roles, or freelance gigs</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>9.4 Freelance Platforms</h3>
+                    <ul>
+                        <li>Set up profiles on Upwork, Freelancer, and Fiverr</li>
+                        <li>Learn how to pitch clients and set project rates</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
